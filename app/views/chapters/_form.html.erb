@@ -1,6 +1,6 @@
-<%= form_for @chapter do |f| %>
-<%= f.text_field :title %>
-<%= f.text_area :body %>
-<%#= f.boolean :complete %>
+<%= simple_form_for @chapter do |f| %>
+<%= f.input :title %>
+<%= f.input :body %>
+<%= f.input :complete %>
 <%= f.submit %>
 <% end %>
